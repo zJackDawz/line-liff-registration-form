@@ -1,0 +1,11 @@
+.Wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Heading {
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
