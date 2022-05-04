@@ -10,6 +10,7 @@ import FormCleaningHourlyPage from "./components/FormCleaningHourly";
 import FormCleaningMonthlyPage from "./components/FormCleaningMonthly";
 import FormSprayPage from "./components/FormSpray";
 import FormBigCleaningPage from "./components/FormBigCleaning";
+import FormVentPage from "./components/FormVent";
 import "./App.css";
 
 const liffId = ""; // Add your LIFF ID here.
@@ -104,6 +105,7 @@ const App = () => {
             path="/big-cleaning"
             element={<FormBigCleaningPage userId={userId} />}
           />
+          <Route path="/vent" element={<FormVentPage userId={userId} />} />
         </Routes>
       ) : (
         <FormRegistrationPage userId={userId} />

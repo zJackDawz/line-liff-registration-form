@@ -17,6 +17,9 @@ const SiteMapElement = () => {
         <Link to="/big-cleaning" className={styles.SiteMapLink}>
           <li>Big Cleaning</li>
         </Link>
+        <Link to="/vent" className={styles.SiteMapLink}>
+          <li>ทำความสะอาดเครื่องปรับอากาศ</li>
+        </Link>
       </ul>
     </div>
   );
