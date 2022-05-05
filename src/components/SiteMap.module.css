@@ -7,11 +7,16 @@
   padding: 0.5rem;
 }
 .SiteMapLink {
-  color: inherit;
-  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 45px;
+  display: block;
+  background-color: #35a2ff;
+  color: white;
   font-size: 20px;
+  text-decoration: none;
   transition: color 0.2s;
 }
 .SiteMapLink:hover {
-  color: #0d6efd;
+  color: #00e1a9;
 }

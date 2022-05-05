@@ -13,14 +13,14 @@ import FormBigCleaningPage from "./components/FormBigCleaning";
 import FormVentPage from "./components/FormVent";
 import "./App.css";
 
-const liffId = ""; // Add your LIFF ID here.
+const liffId = "1657098078-MvDJ9RZz"; // Add your LIFF ID here.
 
 const currentUrl = window.location.href;
 
 const App = () => {
   const [loading, setLoading] = useState(true);
   const [verifiedUser, setVerifiedUser] = useState(false);
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState("U1ffc640444dd92a7af4d4f42914b0b1f");
 
   useEffect(() => {
     const getUserId = async () => {
@@ -65,7 +65,7 @@ const App = () => {
       setLoading(false);
     };
 
-    getUserId();
+    //getUserId();
     validateUser();
   }, [userId]);
 
@@ -89,9 +89,9 @@ const App = () => {
         <Routes>
           <Route
             path="*"
-            element={<DefaultPage headingText="Page Not Found." />}
+            element={<DefaultPage />}
           />
-          <Route path="/" element={<DefaultPage headingText="Best care" />} />
+          <Route path="/" element={<DefaultPage />} />
           <Route
             path="/cleaning-hourly"
             element={<FormCleaningHourlyPage userId={userId} />}
